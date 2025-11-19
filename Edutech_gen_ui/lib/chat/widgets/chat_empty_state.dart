@@ -24,15 +24,11 @@ class ChatEmptyState extends StatelessWidget {
                 ],
               ),
             ),
-            child: const Icon(
-              Icons.flight_takeoff,
-              color: Colors.white,
-              size: 80,
-            ),
+            child: const Icon(Icons.school, color: Colors.white, size: 80),
           ),
           const SizedBox(height: 24),
           Text(
-            'Plan Your Dream Trip',
+            'Learn everything thing with AI',
             style: theme.textTheme.headlineSmall?.copyWith(
               fontWeight: FontWeight.bold,
             ),
@@ -41,10 +37,10 @@ class ChatEmptyState extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 48),
             child: Text(
-              'Tell me about your travel plans and I\'ll help you create the perfect itinerary!',
+              'Ask me anything related to your studies and get instant answers, explanations, with videos and tutorials.',
               textAlign: TextAlign.center,
               style: theme.textTheme.bodyMedium?.copyWith(
-                color: theme.colorScheme.onSurface.withOpacity(0.6),
+                color: theme.colorScheme.onSurface.withValues(alpha: 0.7),
               ),
             ),
           ),

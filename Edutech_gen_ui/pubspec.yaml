@@ -21,6 +21,26 @@ version: 1.0.0+1
 environment:
   sdk: ^3.9.2
 
+# `dart pub global activate derry` run this commend to work with scripts
+scripts:
+  # run is a default script. To use it, simply type
+  # in the command line: "derry" - that's all!
+  run: "flutter run"
+  # you can define more commands like this: "derry build"
+  codegen: "dart run build_runner build --delete-conflicting-outputs"
+  lang-gen: "flutter gen-l10n"
+  # and even nest them!
+  android:
+  # derry build android apk
+  gen-apk: "flutter build apk --split-per-abi"
+  # derry build android appbundle
+  appbundle: "flutter build appbundle --release"
+  #derry build apk
+  build-apk: "flutter build apk --split-per-abi"
+  build-apk--test: "flutter build apk --flavor Test -t lib/main_test.dart --split-per-abi"
+  build-apk--prod: "flutter build apk --flavor prod -t lib/mainS.dart --split-per-abi"
+
+
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
@@ -45,6 +65,7 @@ dependencies:
   auto_route: ^10.2.2
   shared_preferences: ^2.5.3
   firebase_app_check: ^0.4.1+2
+  json_schema_builder: ^0.1.3
 
 dev_dependencies:
   flutter_test:

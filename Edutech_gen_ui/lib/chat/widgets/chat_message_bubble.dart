@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gpt_markdown/gpt_markdown.dart';
-import 'package:education_gen_ui/chat/chat_message.dart';
+import 'package:education_gen_ui/models/chat_message.dart';
 
 class ChatMessageBubble extends StatelessWidget {
   final ChatMessage message;

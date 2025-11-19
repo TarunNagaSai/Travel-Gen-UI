@@ -4,7 +4,7 @@ import 'package:firebase_ai/firebase_ai.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:education_gen_ui/chat/chat_message.dart';
+import 'package:education_gen_ui/models/chat_message.dart';
 import 'package:education_gen_ui/const/constents.dart';
 
 part 'ai_event.dart';
