@@ -1,4 +1,4 @@
-package com.example.travell_bookings
+package com.example.education_gen_ui
 
 import io.flutter.embedding.android.FlutterActivity
 
