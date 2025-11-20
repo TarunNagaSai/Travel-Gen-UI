@@ -483,18 +483,20 @@ packages:
   genui:
     dependency: "direct main"
     description:
-      name: genui
-      sha256: facb7d59280eaae4e3041cb12c8257bb0b61ab1e339fe8ff6d74e7f2e42f1e24
-      url: "https://pub.dev"
-    source: hosted
+      path: "packages/genui"
+      ref: HEAD
+      resolved-ref: "84445fe4607780eda5274c87bf6db77a95403662"
+      url: "https://github.com/flutter/genui.git"
+    source: git
     version: "0.5.1"
   genui_firebase_ai:
     dependency: "direct main"
     description:
-      name: genui_firebase_ai
-      sha256: "6abc813bfffd462a1a9b375a9d7603eef3653dc6de846a48a411713793470ce7"
-      url: "https://pub.dev"
-    source: hosted
+      path: "packages/genui_firebase_ai"
+      ref: HEAD
+      resolved-ref: "84445fe4607780eda5274c87bf6db77a95403662"
+      url: "https://github.com/flutter/genui.git"
+    source: git
     version: "0.5.1"
   glob:
     dependency: transitive

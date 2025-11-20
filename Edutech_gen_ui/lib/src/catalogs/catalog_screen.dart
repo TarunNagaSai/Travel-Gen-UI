@@ -1,8 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:education_gen_ui/catalogs/input_text_box_widget.dart';
-import 'package:education_gen_ui/catalogs/youtube_video_card_widget.dart';
-import 'package:education_gen_ui/catalogs/quiz_card_widget.dart';
+import 'package:education_gen_ui/src/catalogs/input_text_box_widget.dart';
+import 'package:education_gen_ui/src/catalogs/youtube_video_card_widget.dart';
+import 'package:education_gen_ui/src/catalogs/quiz_card_widget.dart';
 
 @RoutePage()
 class CatalogScreen extends StatelessWidget {

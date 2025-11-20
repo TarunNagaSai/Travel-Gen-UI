@@ -1,13 +1,13 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:education_gen_ui/chat/widgets/chat_empty_state.dart';
-import 'package:education_gen_ui/models/chat_message.dart';
+import 'package:education_gen_ui/src/chat/widgets/chat_empty_state.dart';
+import 'package:education_gen_ui/src/models/chat_message.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:genui/genui.dart' hide ChatMessage;
 import 'package:genui_firebase_ai/genui_firebase_ai.dart';
-import 'package:education_gen_ui/chat/bloc/ai_bloc.dart';
-import 'package:education_gen_ui/chat/widgets/chat_message_input.dart';
-import 'package:education_gen_ui/chat/widgets/chat_message_list.dart';
+import 'package:education_gen_ui/src/chat/bloc/ai_bloc.dart';
+import 'package:education_gen_ui/src/chat/widgets/chat_message_input.dart';
+import 'package:education_gen_ui/src/chat/widgets/chat_message_list.dart';
 
 @RoutePage()
 class ChatScreen extends StatefulWidget {

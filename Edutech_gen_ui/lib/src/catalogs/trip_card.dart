@@ -1,4 +1,4 @@
-import 'package:education_gen_ui/chat/widgets/trip_card.dart';
+import 'package:education_gen_ui/src/chat/widgets/trip_card.dart';
 import 'package:genui/genui.dart';
 import 'package:json_schema_builder/json_schema_builder.dart';
 

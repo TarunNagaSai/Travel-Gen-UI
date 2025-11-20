@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:education_gen_ui/chat/widgets/chat_suggestion_chips.dart';
+import 'package:education_gen_ui/src/chat/widgets/chat_suggestion_chips.dart';
 
 class ChatEmptyState extends StatelessWidget {
   const ChatEmptyState({super.key});

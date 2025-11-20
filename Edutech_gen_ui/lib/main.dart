@@ -1,11 +1,11 @@
-import 'package:education_gen_ui/chat/bloc/ai_bloc.dart';
+import 'package:education_gen_ui/src/chat/bloc/ai_bloc.dart';
 import 'package:education_gen_ui/firebase_options.dart';
-import 'package:education_gen_ui/routes/routes.dart';
+import 'package:education_gen_ui/src/routes/routes.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:education_gen_ui/const/theme.dart';
+import 'package:education_gen_ui/src/const/theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

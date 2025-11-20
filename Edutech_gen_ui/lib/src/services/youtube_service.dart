@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:education_gen_ui/models/youtube_search_response.dart';
+import 'package:education_gen_ui/src/models/youtube_search_response.dart';
 
 class YouTubeService {
   late final Dio _dio;

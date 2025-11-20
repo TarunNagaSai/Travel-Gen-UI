@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:genui/genui.dart' hide ChatMessage;
-import 'package:education_gen_ui/models/chat_message.dart';
+import 'package:education_gen_ui/src/models/chat_message.dart';
 
 class ChatMessageList extends StatelessWidget {
   final List<ChatMessage> messages;

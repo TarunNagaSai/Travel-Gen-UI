@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:education_gen_ui/routes/routes.gr.dart';
+import 'package:education_gen_ui/src/routes/routes.gr.dart';
 
 @AutoRouterConfig()
 class AppRouter extends RootStackRouter {
@@ -8,7 +8,7 @@ class AppRouter extends RootStackRouter {
 
   @override
   List<AutoRoute> get routes => [
-    AutoRoute(page: ChatRoute.page),
-    AutoRoute(page: CatalogRoute.page, initial: true),
+    AutoRoute(page: ChatRoute.page, initial: true),
+    AutoRoute(page: CatalogRoute.page),
   ];
 }
