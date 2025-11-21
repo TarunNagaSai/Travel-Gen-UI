@@ -1,4 +1,5 @@
 import 'package:education_gen_ui/src/catalogs/quiz_card_widget.dart';
+import 'package:education_gen_ui/src/catalogs/youtube_video_card_widget.dart';
 import 'package:genui/genui.dart';
 
 /// Defines the collection of UI components that the generative AI model can use
@@ -27,4 +28,8 @@ final Catalog travelAppCatalog = CoreCatalogItems.asCatalog()
       CoreCatalogItems.row,
       CoreCatalogItems.image,
     ])
-    .copyWith([CoreCatalogItems.imageFixedSize, quizCardWidgetCatalogItem]);
+    .copyWith([
+      CoreCatalogItems.imageFixedSize,
+      quizCardWidgetCatalogItem,
+      youtubeCardWidgetCatalog,
+    ]);
