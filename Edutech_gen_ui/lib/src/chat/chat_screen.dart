@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:education_gen_ui/src/catalogs/catalogs.dart';
+import 'package:education_gen_ui/src/chat/widgets/conversations.dart';
 import 'package:education_gen_ui/src/const/education_system_prompt.dart';
 import 'package:education_gen_ui/src/services/youtube_service.dart';
 import 'package:education_gen_ui/src/tools/youtube_search_key_tool.dart';
@@ -8,7 +9,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:genui/genui.dart';
 import 'package:education_gen_ui/src/providers/ai_provider.dart';
 import 'package:education_gen_ui/src/chat/widgets/chat_message_input.dart';
-import 'package:education_gen_ui/src/chat/widgets/chat_message_list.dart';
 import 'package:genui_firebase_ai/genui_firebase_ai.dart';
 
 @RoutePage()
@@ -91,7 +91,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
   Future<void> _handleSendMessage(String text) async {
     final msg = text.trim();
     if (msg.isNotEmpty) {
-      // _messageController.clear();
+      _messageController.clear();
       ref.read(aiChatProvider.notifier).sendMessage(text);
       _uiConversation.sendRequest(UserMessage.text(text));
     }
@@ -120,10 +120,15 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
               return Column(
                 children: [
                   Expanded(
-                    child: ChatMessageList(
-                      messages: <ChatMessage>[],
-                      isLoading: chatState.isLoading,
-                      scrollController: _scrollController,
+                    child: ValueListenableBuilder<List<ChatMessage>>(
+                      valueListenable: _uiConversation.conversation,
+                      builder: (context, messages, child) {
+                        return Conversation(
+                          messages: messages,
+                          manager: _uiConversation.genUiManager,
+                          scrollController: _scrollController,
+                        );
+                      },
                     ),
                   ),
                   ChatMessageInput(
